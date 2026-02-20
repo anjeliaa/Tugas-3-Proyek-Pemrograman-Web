@@ -35,7 +35,7 @@ rl.question("Masukkan tanggal lahir: ", function(tanggal) {
         zodiak = "Scorpio";
     }
     else if ((tanggal >= 22 && bulan == 11) || (tanggal <= 21 && bulan == 12)) {
-        zodiak = "Sagittarius";
+        zodiak = "Sagitarius";
     }
     else if ((tanggal >= 22 && bulan == 12) || (tanggal <= 19 && bulan == 1)) {
         zodiak = "Capricorn";

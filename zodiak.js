@@ -5,9 +5,8 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-function tanyaZodiak() {
-    rl.question("Masukkan tanggal lahir: ", function(tanggal) {
-        rl.question("Masukkan bulan lahir: ", function(bulan) {
+rl.question("Masukkan tanggal lahir: ", function(tanggal) {
+    rl.question("Masukkan bulan lahir: ", function(bulan) {
     
     let zodiak = "";
 
@@ -36,7 +35,7 @@ function tanyaZodiak() {
         zodiak = "Scorpio";
     }
     else if ((tanggal >= 22 && bulan == 11) || (tanggal <= 21 && bulan == 12)) {
-        zodiak = "Sagitarius";
+        zodiak = "Sagittarius";
     }
     else if ((tanggal >= 22 && bulan == 12) || (tanggal <= 19 && bulan == 1)) {
         zodiak = "Capricorn";
@@ -50,12 +49,9 @@ function tanyaZodiak() {
     else {
         zodiak = "tidak diketahui";
     }
-
-    console.log("Berdasarkan tanggal dan bulan lahirmu " + tanggal + "/" + bulan + ", zodiakmu adalah " + zodiak + ".");
     
-tanyaZodiak();
-        });
-    });
-}
+    console.log("Berdasarkan tanggal dan bulan lahirmu " + tanggal + "/" + bulan + ", zodiakmu adalah " + zodiak + ".");
 
-tanyaZodiak();
+rl.close();
+    });
+});
